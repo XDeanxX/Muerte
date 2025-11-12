@@ -7,11 +7,8 @@
     <link rel="icon" type="image/png" href="{{ asset('img/isotipo.png') }}">
 
     <title>@yield('title', 'CMBEY - Sistema Municipal')</title>
-
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
-
-
 
 
 </head>
@@ -171,7 +168,7 @@
                             </ul>
                         </div>
                     </template>
-                    
+
                     <template x-if="userRole === 1">
                         <div>
                             <button @click="configurateParameters = !configurateParameters"

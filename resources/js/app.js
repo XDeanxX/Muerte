@@ -2,11 +2,11 @@
 import './bootstrap';
 import 'driver.js/dist/driver.css';
 import 'vanilla-toast/vanilla-toast.css';
-import toast from 'vanilla-toast';
-import {driver} from 'driver.js'
-import Chart from 'chart.js/auto';
-
 import 'boxicons/css/boxicons.min.css';
+
+import toast from 'vanilla-toast';
+import { driver } from 'driver.js';
+import Chart from 'chart.js/auto';
 
 window.toast = toast;
 window.Chart = Chart;
@@ -18,12 +18,10 @@ window.driver = {
 };
 
 window.addEventListener('show-toast', e => {
-    
     const data = e.detail[0] || e.detail; 
-    console.log(e)
-    const message = data.message 
-    const type = data.type 
-    const duration =  1500;
+    const message = data.message;
+    const type = data.type;
+    const duration = 1500;
     const fadeDuration = 300;
     
     window.toast.success(message, {
@@ -35,12 +33,10 @@ window.addEventListener('show-toast', e => {
 });
 
 window.addEventListener('error-toast', e => {
-    
     const data = e.detail[0] || e.detail; 
-    console.log(e)
-    const message = data.message 
-    const type = data.type 
-    const duration =  1500;
+    const message = data.message;
+    const type = data.type;
+    const duration = 1500;
     const fadeDuration = 300;
     
     window.toast.error(message, {

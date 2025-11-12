@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="{{ asset('img/isotipo.png') }}">
     <title>CMBEY - Iniciar Sesión</title>
     @vite('resources/css/app.css')
+    
     @livewireStyles
     <style>
         .divider-line {
