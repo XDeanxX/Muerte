@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@source "../views";
+@import 'boxicons/css/boxicons.min.css';
+
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --breakpoint-ss: 25rem;
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-roboto: "Roboto", sans-serif;
+    --font-roboto-bold: "Roboto-Bold", sans-serif;
+    --font-roboto-media: "Roboto-Media", sans-serif;
+    --animate-logo-bruzual: bounce_logo 3s ease-in-out infinite;
+    --text-color-grayB: #696969;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Media";
+    src: url("/fonts/Roboto-Media.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+
+.driver-popover.mi-popover-tour {
+    background-color: #ffffff; 
+    color: #34495e; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.mi-popover-tour .driver-popover-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50; 
+}
+
+.mi-popover-tour .driver-popover-footer button {
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px 12px; 
+    font-size: 0.95rem; 
+}
+
+.mi-popover-tour .driver-popover-next-btn {
+    background-color: #4285F4; 
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.mi-popover-tour .driver-popover-next-btn:hover {
+    background-color: #357ae8;
+}
+
+.mi-popover-tour .driver-popover-prev-btn {
+    color: #616161; 
+    background: transparent;
+    border: 1px solid #bdbdbd; 
+    transition: all 0.2s ease-in-out;
+}
+
+.mi-popover-tour .driver-popover-prev-btn:hover {
+    background-color: #f0f0f0; 
+    color: #424242;
+}
+
+.mi-popover-tour .driver-popover-close-btn {
+    color: #757575; 
+    transition: color 0.2s;
+}
+
+.mi-popover-tour .driver-popover-close-btn:hover {
+    color: #424242;
+}
+
+.sidebar-item {
+            transition: all 0.3s ease;
+        }
+        .sidebar-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(8px);
+        }
+        .sidebar-submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .sidebar-submenu.open {
+            max-height: 300px;
+        }
+        .navbar-gradient {
+            background: linear-gradient(135deg, #7dd3fc 0%, #3b82f6 50%, #1e40af 100%);
+        }
+        .sidebar-gradient {
+            background: linear-gradient(180deg, #7dd3fc 0%, #3b82f6 50%, #1e40af 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar-responsive {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 50;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar-responsive.open {
+                transform: translateX(0);
+            }
+            .main-content-mobile {
+                margin-left: 0 !important;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .sidebar-responsive {
+                position: static;
+                transform: none !important;
+            }
+        }
+
+
+        
