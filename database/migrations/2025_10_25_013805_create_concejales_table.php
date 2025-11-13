@@ -13,10 +13,18 @@ return new class extends Migration
     {
         Schema::create('concejales', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('persona_cedula')->index();
+
+            // 💡 CORRECCIÓN: Cambiar ->index() a ->unique() para permitir la FK.
+            $table->unsignedBigInteger('persona_cedula')->unique();
+
             $table->string('cargo_concejal');
 
-            $table->foreign('persona_cedula')->references('cedula')->on('personas')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('persona_cedula')
+                ->references('cedula')
+                ->on('personas')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+
             $table->softDeletes();
             $table->timestamps();
         });
