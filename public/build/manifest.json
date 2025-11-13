@@ -1,0 +1,43 @@
+{
+  "node_modules/boxicons/fonts/boxicons.eot": {
+    "file": "assets/boxicons-CSrLvhY_.eot",
+    "src": "node_modules/boxicons/fonts/boxicons.eot"
+  },
+  "node_modules/boxicons/fonts/boxicons.svg": {
+    "file": "assets/boxicons-Dp7W9qN3.svg",
+    "src": "node_modules/boxicons/fonts/boxicons.svg"
+  },
+  "node_modules/boxicons/fonts/boxicons.ttf": {
+    "file": "assets/boxicons-EIQNrSje.ttf",
+    "src": "node_modules/boxicons/fonts/boxicons.ttf"
+  },
+  "node_modules/boxicons/fonts/boxicons.woff": {
+    "file": "assets/boxicons-CTVby2V1.woff",
+    "src": "node_modules/boxicons/fonts/boxicons.woff"
+  },
+  "node_modules/boxicons/fonts/boxicons.woff2": {
+    "file": "assets/boxicons-CeGEncwm.woff2",
+    "src": "node_modules/boxicons/fonts/boxicons.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-Dp0mfARf.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Bg4H_Mh6.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-D9rRl-8o.css"
+    ],
+    "assets": [
+      "assets/boxicons-CSrLvhY_.eot",
+      "assets/boxicons-CeGEncwm.woff2",
+      "assets/boxicons-CTVby2V1.woff",
+      "assets/boxicons-EIQNrSje.ttf",
+      "assets/boxicons-Dp7W9qN3.svg"
+    ]
+  }
+}
