@@ -17,8 +17,22 @@ return new class extends Migration
             $table->unsignedBigInteger('reunion_id');
             $table->boolean('asistencia')->default(false);
 
-            $table->foreign('concejal_id')->references('persona_cedula')->on('concejales')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('reunion_id')->references('id')->on('reuniones')->onUpdate('cascade')->onDelete('cascade');
+            // 💡 CORRECCIÓN APLICADA: Añadir un índice explícito a 'concejal_id'
+            // Esto garantiza que la columna está lista para ser usada como clave foránea.
+            $table->index('concejal_id');
+
+            $table->foreign('concejal_id')
+                  ->references('persona_cedula')
+                  ->on('concejales')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
+                  
+            $table->foreign('reunion_id')
+                  ->references('id')
+                  ->on('reuniones')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
+                  
             $table->softDeletes();
             $table->timestamps();
         });

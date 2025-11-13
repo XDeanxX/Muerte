@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="{{ asset('img/isotipo.png') }}">
     <title>CMBEY - Registro</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     @livewireStyles
 
