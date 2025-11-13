@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="{{ asset('img/isotipo.png') }}">
     <title>CMBEY - Iniciar Sesión</title>
     @vite('resources/css/app.css')
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     @livewireStyles
     <style>
         .divider-line {
@@ -228,8 +229,7 @@
     </div>
     @livewireScripts
     <script>
-       
-            const slides = document.querySelectorAll('.carousel-slide');
+        const slides = document.querySelectorAll('.carousel-slide');
             const indicators = document.querySelectorAll('.indicator');
             let currentSlide = 0;
             let carouselInterval;
