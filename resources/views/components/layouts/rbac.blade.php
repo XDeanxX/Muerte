@@ -8,11 +8,7 @@
 
     <title>@yield('title', 'CMBEY - Sistema Municipal')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireStyles
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    @livewireStyle
 
 </head>
 
