@@ -8,11 +8,14 @@
 
     <title>@yield('title', 'CMBEY - Sistema Municipal')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireStyle
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    @livewireStyles
 
 </head>
 
-<body class="bg-white font-roboto">
+<body class=" font-roboto">
     <div class="flex h-screen" x-data="{ sidebarOpen: false }">
 
         <div x-show="sidebarOpen" @click="sidebarOpen = false" class="fixed inset-0 bg-black/40 z-40 md:hidden"
